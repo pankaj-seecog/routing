@@ -28,19 +28,19 @@ localStorage.setItem('loginstt',"1");
 
 render(){
   return (
-    <div>
+    <div className="container">
 <p>
-Email : <input onChange={(evt)=>this.setState({
+Email : <input className="form-control" onChange={(evt)=>this.setState({
 email : evt.target.value
 })}/>
 </p>
 <p>
-Password : <input type="password" onChange={(evt)=>this.setState({
+Password : <input className="form-control"  type="password" onChange={(evt)=>this.setState({
 password : evt.target.value
 })}/>
 </p>
 <p>
-<button onClick={this.checkLogin}>Login Please</button>
+<button className="btn btn-primary" onClick={this.checkLogin}>Login Please</button>
 </p>
     </div>
   )
