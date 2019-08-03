@@ -3,7 +3,9 @@ import { render } from 'react-dom';
 import Myroute from './Myroute';
 import Yourroute from './Yourroute'
 import './style.css';
-
+import Products from './mohana/Products'
+import Second from './mohana/Second';
+import Add2 from './mohana/Add2';
 class App extends Component {
   constructor() {
     super();
@@ -24,4 +26,4 @@ class App extends Component {
   }
 }
 
-render(<Yourroute />, document.getElementById('root'));
+render(<Add2 />, document.getElementById('root'));
