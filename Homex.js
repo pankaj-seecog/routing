@@ -1,5 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link,BrowserRouter,Route} from 'react-router-dom'
+import About from './About';
+import Contact from './Contact'
 class Homex extends React.Component{
 
 logout = ()=>{
@@ -9,13 +11,20 @@ logout = ()=>{
 
 render(){
   return (
-    <div>
+    <BrowserRouter>
 <h1>Insise Home</h1>
 <hr/>
 <Link to="/about">About</Link> | 
 <Link to="/contact">Contact Us</Link> |
 <button onClick={this.logout}>Logout</button>
-    </div>
+<hr/>
+
+//Child routing start
+<Route path="/about" component={About}/>
+<Route path="/contact" component={Contact}/>
+//Child Routing end
+
+    </BrowserRouter>
   )
 }
 

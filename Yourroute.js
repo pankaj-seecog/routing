@@ -9,16 +9,11 @@ class Yourroute extends React.Component{
 render(){
   return (
 <BrowserRouter>
-
 {
   (localStorage.getItem('loginstt')=='1')?<Redirect to="/home"/>:<Redirect to="/"/>
 }
-
 <Route exact path="/" component={Loginx}/>
 <Route path="/home" component={Homex}/>
-<Route path="/about" component={About}/>
-<Route path="/contact" component={Contact}/>
-
 </BrowserRouter>
   )
 }
