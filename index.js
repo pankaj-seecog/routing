@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Myroute from './Myroute';
+import Yourroute from './Yourroute'
 import './style.css';
 
 class App extends Component {
@@ -23,4 +24,4 @@ class App extends Component {
   }
 }
 
-render(<Myroute />, document.getElementById('root'));
+render(<Yourroute />, document.getElementById('root'));
