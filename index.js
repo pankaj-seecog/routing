@@ -5,7 +5,7 @@ import Yourroute from './Yourroute'
 import './style.css';
 import Products from './mohana/Products'
 import Second from './mohana/Second';
-import Add2 from './mohana/Add2';
+import AvgForm from './AvgForm';
 class App extends Component {
   constructor() {
     super();
@@ -26,4 +26,4 @@ class App extends Component {
   }
 }
 
-render(<Add2 />, document.getElementById('root'));
+render(<AvgForm />, document.getElementById('root'));
