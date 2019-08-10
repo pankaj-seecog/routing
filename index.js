@@ -5,6 +5,7 @@ import Yourroute from './Yourroute'
 import './style.css';
 import Products from './mohana/Products'
 import Second from './mohana/Second';
+import Life from './Life'
 import AvgForm from './AvgForm';
 class App extends Component {
   constructor() {
@@ -26,4 +27,4 @@ class App extends Component {
   }
 }
 
-render(<AvgForm />, document.getElementById('root'));
+render(<Life />, document.getElementById('root'));
