@@ -7,6 +7,8 @@ import Products from './mohana/Products'
 import Second from './mohana/Second';
 import Life from './Life'
 import AvgForm from './AvgForm';
+import Myprovider from './MyProvider';
+import Exp1 from './Exp1'
 class App extends Component {
   constructor() {
     super();
@@ -27,4 +29,4 @@ class App extends Component {
   }
 }
 
-render(<Life />, document.getElementById('root'));
+render(<Exp1 />, document.getElementById('root'));
